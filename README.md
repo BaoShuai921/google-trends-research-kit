@@ -2,7 +2,7 @@
 
 把 Google Trends 官方教程里的方法，转成可以检索、复核和调用的中文研究工具。适用于欧美市场的日用品选品、图书选题、内容排期与市场分析。
 
-[打开方法库演示](https://baoshuai921.github.io/google-trends-research-kit/) · [阅读五页课件样章](docs/sample/README.md) · [跑通一个例子](docs/example.md) · [反馈问题](https://github.com/BaoShuai921/google-trends-research-kit/issues/new/choose)
+[打开方法库演示](https://baoshuai921.github.io/google-trends-research-kit/) · [阅读五页课件样章](https://baoshuai921.github.io/google-trends-research-kit/sample/) · [跑通一个例子](docs/example.md) · [反馈问题](https://github.com/BaoShuai921/google-trends-research-kit/issues/new/choose)
 
 **English:** A Chinese-first Google Trends research kit with 34 searchable methods, source timestamps, annotated lessons and a reusable Agent Skill. It helps plan and interpret research; arbitrary-keyword historical data requires web access or an approved API.
 
@@ -20,7 +20,7 @@
 
 ## 一分钟试用
 
-不需要账号即可使用本地方法库。下载仓库 ZIP、解压，用浏览器打开 `docs/index.html`。网页不加载外部字体、分析脚本或前端依赖。
+不需要账号即可使用本地方法库。[下载仓库 ZIP](https://github.com/BaoShuai921/google-trends-research-kit/archive/refs/heads/main.zip)、解压，用浏览器打开 `docs/index.html`。网页不加载外部字体、分析脚本或前端依赖。
 
 运行脚本需要 **Node.js 22 或更高版本**，无需 `npm install`。在仓库根目录执行：
 

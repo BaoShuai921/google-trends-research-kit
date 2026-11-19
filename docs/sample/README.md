@@ -1,6 +1,6 @@
 # 五页样章：网页操作与读图
 
-[连续阅读网页版](index.html) · [返回项目](../../README.md)
+[连续阅读网页版](https://baoshuai921.github.io/google-trends-research-kit/sample/) · [返回项目](../../README.md)
 
 这一章练习从查询设置走到有范围的观察：固定筛选条件，读曲线与地图，筛掉无关的关联词，最后交一条可复现记录。
 
