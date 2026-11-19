@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ht="https://trends.google.com/trending/rss"><channel>
+<title>Synthetic test fixture</title>
+<item><title><![CDATA[Example &amp; Test]]></title><ht:approx_traffic>500+</ht:approx_traffic><pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate><link>https://example.com/research?a=1&amp;b=2</link></item>
+<item><title>Missing fields test</title></item>
+</channel></rss>

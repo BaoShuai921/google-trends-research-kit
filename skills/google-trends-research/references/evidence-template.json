@@ -1,0 +1,31 @@
+{
+  "task": "用户要做出的决定",
+  "query": {
+    "terms": [],
+    "inputTypes": [],
+    "markets": [],
+    "dateRanges": [],
+    "category": "",
+    "property": "",
+    "periodGranularity": "",
+    "interfaceVersion": ""
+  },
+  "capture": {
+    "at": "",
+    "queryLinks": [],
+    "csvFiles": [],
+    "screenshots": [],
+    "sourceAttribution": "Google Trends"
+  },
+  "observations": [],
+  "limitations": [],
+  "externalChecks": [],
+  "nextAction": {
+    "proposal": "",
+    "budgetOrScope": "",
+    "metric": "",
+    "passCondition": "",
+    "stopCondition": "",
+    "reviewDate": ""
+  }
+}

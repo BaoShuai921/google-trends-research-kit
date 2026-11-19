@@ -1,0 +1,343 @@
+{
+  "playlist": "https://www.youtube.com/playlist?list=PLKoqnv2vTMUO8MUpCbVIiBaDZYrpNF8f-",
+  "reviewedOn": "2026-11-18",
+  "captionCoverage": {
+    "videos": 10,
+    "cues": 1129,
+    "plainTextTokens": 11761,
+    "encoding": "o200k_base",
+    "seconds": 3812
+  },
+  "procedure": "逐集取得并检查完整官方已发布英文字幕，核对时序和章节，按官方资料复核可执行方法。其余九集公开媒体成功解码，各检查三个时间点并完成短段播放。课件使用网页实拍、原视频网页区域、Google 官方演示静帧及独立模拟图，注明来源和性质。完整逐帧观看和账户受限功能尚未列为已验证。",
+  "items": [
+    {
+      "index": 1,
+      "id": "03tySMdo-E8",
+      "title": "Welcome to the Google Trends Tutorials",
+      "durationSeconds": 70,
+      "textTokens": 195,
+      "first": 42,
+      "last": 62938,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 22,
+      "url": "https://www.youtube.com/watch?v=03tySMdo-E8",
+      "methods": [],
+      "notes": "开场介绍，无额外操作方法。"
+    },
+    {
+      "index": 2,
+      "id": "G76OomPTrE0",
+      "title": "Intro to Google Trends data",
+      "durationSeconds": 377,
+      "textTokens": 1142,
+      "first": 334,
+      "last": 369077,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 103,
+      "url": "https://www.youtube.com/watch?v=G76OomPTrE0",
+      "methods": [
+        "data-sample",
+        "data-normalization",
+        "object-type"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 3,
+      "id": "GXpGoUw4YUw",
+      "title": "Google Trends walkthrough",
+      "durationSeconds": 523,
+      "textTokens": 1697,
+      "first": 42,
+      "last": 515265,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 155,
+      "url": "https://www.youtube.com/watch?v=GXpGoUw4YUw",
+      "methods": [
+        "explore-filters",
+        "blank-explore",
+        "chart-average",
+        "map-breakdown",
+        "related-top-rising",
+        "same-scale"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 4,
+      "id": "Kkd2PkbCdSc",
+      "title": "Google Trends Advanced Tips",
+      "durationSeconds": 458,
+      "cues": 130,
+      "textTokens": 1416,
+      "first": 209,
+      "last": 450492,
+      "kind": "published",
+      "language": "en-US",
+      "url": "https://www.youtube.com/watch?v=Kkd2PkbCdSc",
+      "methods": [
+        "exact-phrase",
+        "plus-minus",
+        "multilingual",
+        "seasonality",
+        "same-period",
+        "cross-market",
+        "explore-export"
+      ],
+      "notes": "已交付进阶课，本次纳入统一方法库。"
+    },
+    {
+      "index": 5,
+      "id": "O-9G9k6ogdw",
+      "title": "Trending Now: Stay on Top of Google Search Trends",
+      "durationSeconds": 272,
+      "textTokens": 872,
+      "first": 125,
+      "last": 261219,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 89,
+      "url": "https://www.youtube.com/watch?v=O-9G9k6ogdw",
+      "methods": [
+        "now-select",
+        "now-metrics",
+        "now-export"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 6,
+      "id": "63WH3rLuq2k",
+      "title": "Google Trends for SEO",
+      "durationSeconds": 548,
+      "textTokens": 1749,
+      "first": 125,
+      "last": 539956,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 166,
+      "url": "https://www.youtube.com/watch?v=63WH3rLuq2k",
+      "methods": [
+        "seo-watch",
+        "seo-keywords",
+        "seo-calendar",
+        "seo-video"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 7,
+      "id": "HzHd2vusBRg",
+      "title": "Google Trends for Marketing & Sales",
+      "durationSeconds": 505,
+      "textTokens": 1467,
+      "first": 0,
+      "last": 493952,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 149,
+      "url": "https://www.youtube.com/watch?v=HzHd2vusBRg",
+      "methods": [
+        "market-assortment",
+        "market-competitors",
+        "market-brand",
+        "market-ad"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 8,
+      "id": "QpEpR8qRWjA",
+      "title": "Google Trends for Journalists",
+      "durationSeconds": 649,
+      "textTokens": 2040,
+      "first": 125,
+      "last": 631673,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 187,
+      "url": "https://www.youtube.com/watch?v=QpEpR8qRWjA",
+      "methods": [
+        "news-event",
+        "news-matrix",
+        "news-calendar",
+        "news-visual"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 9,
+      "id": "L4GE278KIbk",
+      "title": "Google Trends for Researchers",
+      "durationSeconds": 347,
+      "textTokens": 999,
+      "first": 292,
+      "last": 339798,
+      "kind": "published",
+      "language": "en-US",
+      "cues": 101,
+      "url": "https://www.youtube.com/watch?v=L4GE278KIbk",
+      "methods": [
+        "research-nowcast",
+        "research-join",
+        "research-repro"
+      ],
+      "notes": "字幕和章节覆盖已核验。"
+    },
+    {
+      "index": 10,
+      "id": "AAb3K3zAXNs",
+      "title": "Google Trends Tutorials is over - until next time",
+      "durationSeconds": 63,
+      "textTokens": 184,
+      "first": 0,
+      "last": 55360,
+      "kind": "published",
+      "language": "en",
+      "cues": 27,
+      "url": "https://www.youtube.com/watch?v=AAb3K3zAXNs",
+      "methods": [],
+      "notes": "结尾花絮，无额外操作方法。"
+    }
+  ],
+  "mediaTrial": [
+    {
+      "id": "03tySMdo-E8",
+      "index": 1,
+      "seconds": 70,
+      "bytes": 3048055,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 70.170703,
+      "samples": [
+        14,
+        35,
+        56
+      ],
+      "playbackAdvanced": 57.191003
+    },
+    {
+      "id": "G76OomPTrE0",
+      "index": 2,
+      "seconds": 377,
+      "bytes": 13081364,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 376.813424,
+      "samples": [
+        75,
+        189,
+        302
+      ],
+      "playbackAdvanced": 303.17755
+    },
+    {
+      "id": "GXpGoUw4YUw",
+      "index": 3,
+      "seconds": 523,
+      "bytes": 17011756,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 522.983039,
+      "samples": [
+        105,
+        262,
+        418
+      ],
+      "playbackAdvanced": 419.200845
+    },
+    {
+      "id": "O-9G9k6ogdw",
+      "index": 5,
+      "seconds": 272,
+      "bytes": 11078908,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 271.53415,
+      "samples": [
+        54,
+        136,
+        218
+      ],
+      "playbackAdvanced": 219.183145
+    },
+    {
+      "id": "63WH3rLuq2k",
+      "index": 6,
+      "seconds": 548,
+      "bytes": 18838079,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 547.94449,
+      "samples": [
+        110,
+        274,
+        438
+      ],
+      "playbackAdvanced": 439.17979
+    },
+    {
+      "id": "HzHd2vusBRg",
+      "index": 7,
+      "seconds": 505,
+      "bytes": 18291012,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 504.732154,
+      "samples": [
+        101,
+        253,
+        404
+      ],
+      "playbackAdvanced": 405.188202
+    },
+    {
+      "id": "QpEpR8qRWjA",
+      "index": 8,
+      "seconds": 649,
+      "bytes": 23750547,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 648.951293,
+      "samples": [
+        130,
+        325,
+        519
+      ],
+      "playbackAdvanced": 520.215806
+    },
+    {
+      "id": "L4GE278KIbk",
+      "index": 9,
+      "seconds": 347,
+      "bytes": 12776022,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 347.068662,
+      "samples": [
+        69,
+        174,
+        278
+      ],
+      "playbackAdvanced": 279.18394
+    },
+    {
+      "id": "AAb3K3zAXNs",
+      "index": 10,
+      "seconds": 63,
+      "bytes": 3022173,
+      "format": "360p",
+      "downloaded": true,
+      "decodedSeconds": 62.531338,
+      "samples": [
+        13,
+        32,
+        50
+      ],
+      "playbackAdvanced": 51.263969
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+name: 使用反馈 / Feedback
+description: 任务、结果或卡点
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: 你想完成什么任务？
+      description: 例如美国收纳用品季节性研究；请移除账号和业务机密。
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: 使用了哪个入口或方法？结果如何？
+      description: 网页、脚本或技能；可附方法 id、命令及已去除敏感信息的错误。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 最希望改善什么？
+      description: 如果发现内容错误，请附可核对的官方来源或界面日期。

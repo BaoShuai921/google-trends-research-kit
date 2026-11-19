@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Trends 方法库</title>
+<meta name="description" content="34 条可检索的 Google Trends 中文研究方法、官方来源定位与带标注课件。用于选品、图书选题和市场分析。">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f6f9f8;color:#12263a;font:17px/1.65 "Microsoft YaHei",system-ui,sans-serif}
+header{background:#10283b;color:white;padding:40px max(24px,calc((100vw - 1120px)/2)) 30px}
+h1{font-size:36px;margin:0 0 12px}header p{color:#d6e8eb;margin:0;max-width:900px}
+nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px}header nav a{color:#9ce2ce}input{max-width:100%}
+main{max-width:1168px;margin:auto;padding:28px 24px}
+form{display:flex;gap:12px;flex-wrap:wrap}
+input,select{font:inherit;background:white;border:1px solid #a8bfc4;border-radius:6px;padding:12px;color:inherit}
+input{flex:1;min-width:260px}select{min-width:160px}
+#count{color:#4d6272;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+article{background:white;border:1px solid #cbdbdf;border-radius:8px;padding:24px}
+h2{font-size:23px;line-height:1.45;margin:0 0 7px}
+h3{font-size:16px;margin:18px 0 5px;color:#08746b}
+.english{color:#4d6272;font-size:15px}p{margin:8px 0}
+a{color:#155d86;text-underline-offset:3px}small{display:block;color:#4d6272}
+footer{margin-top:26px;border-top:1px solid #cbdbdf;padding-top:18px;color:#4d6272;font-size:15px}
+.links{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px}
+button{font:inherit;background:#08746b;color:white;border:0;border-radius:6px;padding:12px 20px;cursor:pointer}
+@media(max-width:740px){.grid{grid-template-columns:1fr}h1{font-size:29px}header{padding:28px 24px}}
+@media print{form{display:none}.grid{display:block}article{break-inside:avoid;margin-bottom:15px}}
+</style>
+<header>
+<h1>Google Trends 方法库</h1>
+<p>34 条方法，覆盖官方十集教程。按业务问题检索操作、解释边界与视频定位。中文规则保留英文术语，核对日期为 2026 年 11 月 18 日。</p>
+<nav aria-label="试用入口"><a href="sample/index.html">五页课件样章</a><a href="https://github.com/BaoShuai921/google-trends-research-kit#安装为项目技能">安装技能与脚本</a><a href="https://github.com/BaoShuai921/google-trends-research-kit/blob/main/docs/example.md">跑通一个例子</a><a href="https://github.com/BaoShuai921/google-trends-research-kit/issues/new/choose">使用反馈</a></nav>
+</header>
+<main>
+<form>
+<input id="q" type="search" aria-label="检索方法" placeholder="试试 季节性、YouTube、广告 ROI 或 Breakout">
+<select id="mode" aria-label="选择主题"><option value="">全部主题</option></select>
+<button type="reset">重置</button>
+</form>
+<p id="count" role="status"></p>
+<div id="list" class="grid"></div>
+<footer>本工具为独立编排的中文方法库，使用 AI 辅助整理。Google Trends 是 Google LLC 的商标，本工具与 Google 无关联或背书关系。每条均附方法出处。原创文字：BaoShuai921，CC BY 4.0；代码：MIT。当前页面与数据渠道见<a href="https://github.com/BaoShuai921/google-trends-research-kit/blob/main/skills/google-trends-research/references/access.md">账号与授权说明</a>；第三方材料的许可分界见<a href="https://github.com/BaoShuai921/google-trends-research-kit/blob/main/NOTICE.md">NOTICE</a>。</footer>
+</main>
+<script>
+const methods=__DATA__;
+const labels={data:'数据基础',explore:'网页操作',compare:'进阶比较',now:'实时趋势',seo:'SEO 与内容',marketing:'营销与销售',story:'新闻与叙事',research:'研究与临近估计'};
+const q=document.querySelector('#q'),mode=document.querySelector('#mode'),list=document.querySelector('#list'),count=document.querySelector('#count');
+for(const [value,label]of Object.entries(labels)){
+ const option=document.createElement('option');option.value=value;option.textContent=label;mode.append(option);
+}
+function el(tag,value,cls){
+ const node=document.createElement(tag);node.textContent=value;if(cls)node.className=cls;return node;
+}
+function link(label,url){
+ const node=el('a',label);node.href=url;node.target='_blank';node.rel='noopener noreferrer';return node;
+}
+function render(){
+ const words=q.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+ const found=methods.filter(m=>(!mode.value||m.mode===mode.value)&&words.every(w=>[m.zh,m.en,m.tags,m.action,m.limit].join(' ').toLocaleLowerCase().includes(w)));
+ list.replaceChildren();count.textContent='显示 '+found.length+' / '+methods.length+' 条';
+ for(const method of found){
+  const card=el('article','');
+  card.append(el('small',labels[method.mode]+' · 第 '+String(method.video).padStart(2,'0')+' 集'),el('h2',method.zh),el('div',method.en,'english'),el('h3','操作'),el('p',method.action),el('h3','解释边界'),el('p',method.limit));
+  const links=el('div','','links');
+  links.append(link('查看视频 '+Math.floor(method.at/60)+':'+String(method.at%60).padStart(2,'0'),method.sourceUrl),link('核对官方说明',method.officialUrl));
+  card.append(links);list.append(card);
+ }
+ if(!found.length)list.append(el('p','没有匹配条目。可尝试更短的词或切换主题。'));
+}
+q.addEventListener('input',render);mode.addEventListener('change',render);
+document.querySelector('form').addEventListener('submit',event=>event.preventDefault());
+document.querySelector('form').addEventListener('reset',()=>setTimeout(render,0));
+render();
+</script>
+</html>

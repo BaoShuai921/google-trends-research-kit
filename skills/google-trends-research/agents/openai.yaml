@@ -1,0 +1,7 @@
+interface:
+  display_name: "Google Trends 研究"
+  short_description: "检索官方教程方法，执行欧美选品、图书选题与市场查询并保留证据"
+  brand_color: "#08746B"
+  default_prompt: "使用 $google-trends-research 为美国市场比较两个产品候选，记录查询口径、来源和验证动作。"
+policy:
+  allow_implicit_invocation: true
